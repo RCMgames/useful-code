@@ -1,7 +1,8 @@
 /**
  * This file is meant to make it even easier to use Sparkfun's ICM20948 library for Arduino
  * See https://github.com/sparkfun/SparkFun_ICM-20948_ArduinoLibrary for more information. If you want more control over how the sensor is used, try using the library directly.
- */
+// from https://github.com/RCMgames/useful-code/tree/main/boards
+*/
 
 #ifndef ICM20948_HELPER_H
 #define ICM20948_HELPER_H

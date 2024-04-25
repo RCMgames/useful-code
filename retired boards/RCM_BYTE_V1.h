@@ -1,7 +1,8 @@
 /**
  * #define RCM_HARDWARE_VERSION RCM_BYTE_V1
  * version 1 of the RCM BYTE // https://github.com/RCMgames/RCM-Hardware-BYTE/tree/v1---archive
- * */
+// from https://github.com/RCMgames/useful-code/tree/main/boards
+*/
 
 #ifndef RCM_BYTE_V1_H
 #define RCM_BYTE_V1_H
