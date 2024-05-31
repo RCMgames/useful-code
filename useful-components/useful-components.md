@@ -11,6 +11,11 @@ I have no affiliation with the vendors selling these parts, and can't promise fu
     * https://www.amazon.com/s?k=tt+motor
     * the classic yellow gearmotor, great for drivetrains
 * Servos
+* Wires
+  * Qwiic cables (I2C)
+    * https://www.adafruit.com/product/4399
+    * https://www.sparkfun.com/products/17259
+    * https://www.amazon.com/s?k=jst+sh+4pin+connectors
 * Sensors
   * Proximity
     * IR proximity sensor
