@@ -3,7 +3,7 @@
 I have no affiliation with the vendors selling these parts, and can't promise functionality or support. These are just parts I've found useful when making small RCM controlled robots.
 
 * Motors
-  * TT motor with encoder
+  * TT motor with encoder [how to wire](https://github.com/RCMgames/useful-code/blob/main/useful-components/Yahboom%20TT%20motor%20with%20encoder.md)
     * https://category.yahboom.net/products/encoder-tt-motor
     * TT shaped motor, with a quadrature magnetic encoder
   * "TT motor"
