@@ -11,7 +11,12 @@ I have no affiliation with the vendors selling these parts, and can't promise fu
     * https://www.amazon.com/s?k=tt+motor
     * the classic yellow gearmotor, great for drivetrains
 * Servos
+* 5AA Battery holder
+  * https://www.amazon.com/s?k=5AA+battery+holder
+  * Use with NiMH batteries
 * Wires
+  * JST RCY battery wires
+    * https://www.amazon.com/dp/B00Z04QFN2/
   * Qwiic cables (I2C)
     * https://www.adafruit.com/product/4399
     * https://www.sparkfun.com/products/17259
