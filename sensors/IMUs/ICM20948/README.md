@@ -1,7 +1,7 @@
 ## Usage
 Add `setupICM20948()` (or if you have a RCM Nibble, you can use `nibbleSetupImu()`) to the PowerOn() function to set up the IMU.
 
-Add `runImu()` to the `Always()` function.
+Add `runIMU()` to the `Always()` function.
 
 Now, you can access the data within the imu variable.
 ```
