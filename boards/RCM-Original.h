@@ -13,10 +13,10 @@ JMotorDriverEsp32Servo servo4Driver = JMotorDriverEsp32Servo(port4);
 JMotorDriverEsp32Servo servo5Driver = JMotorDriverEsp32Servo(port5);
 
 // all the motor drivers
-JMotorDriverEsp32L293 motor1Driver = JMotorDriverEsp32L293(portA);
-JMotorDriverEsp32L293 motor2Driver = JMotorDriverEsp32L293(portB);
-JMotorDriverEsp32L293 motor3Driver = JMotorDriverEsp32L293(portC);
-JMotorDriverEsp32L293 motor4Driver = JMotorDriverEsp32L293(portD);
+JMotorDriverEsp32L293 motorADriver = JMotorDriverEsp32L293(portA);
+JMotorDriverEsp32L293 motorBDriver = JMotorDriverEsp32L293(portB);
+JMotorDriverEsp32L293 motorCDriver = JMotorDriverEsp32L293(portC);
+JMotorDriverEsp32L293 motorDDriver = JMotorDriverEsp32L293(portD);
 
 // variables for the drivers
 float servo1Val = 0;
@@ -25,10 +25,10 @@ float servo3Val = 0;
 float servo4Val = 0;
 float servo5Val = 0;
 
-float motor1Val = 0;
-float motor2Val = 0;
-float motor3Val = 0;
-float motor4Val = 0;
+float motorAVal = 0;
+float motorBVal = 0;
+float motorCVal = 0;
+float motorDVal = 0;
 
 // set all the motor drivers (you can put this in Enabled())
 servo1Driver.set(servo1Val);
@@ -37,10 +37,10 @@ servo3Driver.set(servo3Val);
 servo4Driver.set(servo4Val);
 servo5Driver.set(servo5Val);
 
-motor1Driver.set(motor1Val);
-motor2Driver.set(motor2Val);
-motor3Driver.set(motor3Val);
-motor4Driver.set(motor4Val);
+motorADriver.set(motorAVal);
+motorBDriver.set(motorBVal);
+motorCDriver.set(motorCVal);
+motorDDriver.set(motorDVal);
 
 // enable all the motor drivers (you can put this in Enable())
 servo1Driver.enable();
@@ -49,10 +49,10 @@ servo3Driver.enable();
 servo4Driver.enable();
 servo5Driver.enable();
 
-motor1Driver.enable();
-motor2Driver.enable();
-motor3Driver.enable();
-motor4Driver.enable();
+motorADriver.enable();
+motorBDriver.enable();
+motorCDriver.enable();
+motorDDriver.enable();
 
 // disable all the motor drivers (you can put this in Disable())
 servo1Driver.disable();
@@ -61,16 +61,16 @@ servo3Driver.disable();
 servo4Driver.disable();
 servo5Driver.disable();
 
-motor1Driver.disable();
-motor2Driver.disable();
-motor3Driver.disable();
-motor4Driver.disable();
+motorADriver.disable();
+motorBDriver.disable();
+motorCDriver.disable();
+motorDDriver.disable();
 
 // receive values for all the variables (you can put this in WifiDataToParse())
-motor1Val = EWD::recvFl();
-motor2Val = EWD::recvFl();
-motor3Val = EWD::recvFl();
-motor4Val = EWD::recvFl();
+motorAVal = EWD::recvFl();
+motorBVal = EWD::recvFl();
+motorCVal = EWD::recvFl();
+motorDVal = EWD::recvFl();
 
 servo1Val = EWD::recvFl();
 servo2Val = EWD::recvFl();
