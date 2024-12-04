@@ -1,5 +1,5 @@
 /**
-Bits of code that might be helpful when starting a program with an original RCM board
+Bits of code that might be helpful when starting a program with a RCM BYTE board
 https://github.com/RCMgames/RCM-Hardware-BYTE
 // from https://github.com/RCMgames/useful-code/tree/main/boards
 */
