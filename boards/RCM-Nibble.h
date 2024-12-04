@@ -61,12 +61,12 @@ motor3Driver.disable();
 motor4Driver.disable();
 
 // receive values for all the variables (you can put this in WifiDataToParse())
-motor1Val = EWD::recvFl();
-motor2Val = EWD::recvFl();
-motor3Val = EWD::recvFl();
-motor4Val = EWD::recvFl();
-
 servo1Val = EWD::recvFl();
 servo2Val = EWD::recvFl();
 servo3Val = EWD::recvFl();
 servo4Val = EWD::recvFl();
+
+motor1Val = EWD::recvFl();
+motor2Val = EWD::recvFl();
+motor3Val = EWD::recvFl();
+motor4Val = EWD::recvFl();
