@@ -1,0 +1,11 @@
+JMotorDriverEsp32HBridge motorADriver = JMotorDriverEsp32HBridge(portA);
+JMotorDriverEsp32HBridge motorBDriver = JMotorDriverEsp32HBridge(portB);
+JMotorDriverEsp32HBridge motorCDriver = JMotorDriverEsp32HBridge(portC);
+JMotorDriverEsp32HBridge motorDDriver = JMotorDriverEsp32HBridge(portD);
+JMotorDriverEsp32HBridge motorEDriver = JMotorDriverEsp32HBridge(portE);
+JMotorDriverEsp32HBridge motorFDriver = JMotorDriverEsp32HBridge(portF);
+
+JMotorDriverEsp32Servo servo1Driver = JMotorDriverEsp32Servo(port1);
+JMotorDriverEsp32Servo servo2Driver = JMotorDriverEsp32Servo(port2);
+JMotorDriverEsp32Servo servo3Driver = JMotorDriverEsp32Servo(port3);
+JMotorDriverEsp32Servo servo4Driver = JMotorDriverEsp32Servo(port4);
