@@ -5,18 +5,18 @@ https://www.alfredosys.com/products/alfredo-nou2/
 */
 
 // all the servo drivers
-JMotorDriverEsp32Servo servo1Driver = JMotorDriverEsp32Servo(port1);
-JMotorDriverEsp32Servo servo2Driver = JMotorDriverEsp32Servo(port2);
-JMotorDriverEsp32Servo servo3Driver = JMotorDriverEsp32Servo(port3);
-JMotorDriverEsp32Servo servo4Driver = JMotorDriverEsp32Servo(port4);
+JMotorDriverEsp32Servo servo1Driver = JMotorDriverEsp32Servo(servo1port);
+JMotorDriverEsp32Servo servo2Driver = JMotorDriverEsp32Servo(servo2port);
+JMotorDriverEsp32Servo servo3Driver = JMotorDriverEsp32Servo(servo3port);
+JMotorDriverEsp32Servo servo4Driver = JMotorDriverEsp32Servo(servo4port);
 
 // all the motor drivers
-JMotorDriverEsp32HBridge motorADriver = JMotorDriverEsp32HBridge(portA);
-JMotorDriverEsp32HBridge motorBDriver = JMotorDriverEsp32HBridge(portB);
-JMotorDriverEsp32HBridge motorCDriver = JMotorDriverEsp32HBridge(portC);
-JMotorDriverEsp32HBridge motorDDriver = JMotorDriverEsp32HBridge(portD);
-JMotorDriverEsp32HBridge motorEDriver = JMotorDriverEsp32HBridge(portE);
-JMotorDriverEsp32HBridge motorFDriver = JMotorDriverEsp32HBridge(portF);
+JMotorDriverEsp32HBridge motorADriver = JMotorDriverEsp32HBridge(motor1port);
+JMotorDriverEsp32HBridge motorBDriver = JMotorDriverEsp32HBridge(motor2port);
+JMotorDriverEsp32HBridge motorCDriver = JMotorDriverEsp32HBridge(motor3port);
+JMotorDriverEsp32HBridge motorDDriver = JMotorDriverEsp32HBridge(motor4port);
+JMotorDriverEsp32HBridge motorEDriver = JMotorDriverEsp32HBridge(motor5port);
+JMotorDriverEsp32HBridge motorFDriver = JMotorDriverEsp32HBridge(motor6port);
 
 // variables for the drivers
 float servo1Val = 0;
