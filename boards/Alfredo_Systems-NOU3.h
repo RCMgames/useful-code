@@ -22,12 +22,13 @@ JMotorDriverPCA9685HBridge motor6Driver = JMotorDriverPCA9685HBridge(motor6port)
 JMotorDriverPCA9685HBridge motor7Driver = JMotorDriverPCA9685HBridge(motor7port);
 JMotorDriverPCA9685HBridge motor8Driver = JMotorDriverPCA9685HBridge(motor8port);
 
-// all the encoder plugs
+// all the encoder ports
 JEncoderQuadrature encoder2 = JEncoderQuadratureAttachInterrupt(encoder2port, 1.0, false); // multiplier, inverted
 JEncoderQuadrature encoder3 = JEncoderQuadratureAttachInterrupt(encoder3port, 1.0, false); // multiplier, inverted
 JEncoderQuadrature encoder4 = JEncoderQuadratureAttachInterrupt(encoder4port, 1.0, false); // multiplier, inverted
 JEncoderQuadrature encoder5 = JEncoderQuadratureAttachInterrupt(encoder5port, 1.0, false); // multiplier, inverted
 JEncoderQuadrature encoder6 = JEncoderQuadratureAttachInterrupt(encoder6port, 1.0, false); // multiplier, inverted
+JEncoderQuadrature encoder7 = JEncoderQuadratureAttachInterrupt(encoder7port, 1.0, false); // multiplier, inverted
 
 // variables for the drivers
 float servo1Val = 0;
@@ -45,6 +46,14 @@ float motor5Val = 0;
 float motor6Val = 0;
 float motor7Val = 0;
 float motor8Val = 0;
+
+// variables for the encoders
+float encoder2Val = 0;
+float encoder3Val = 0;
+float encoder4Val = 0;
+float encoder5Val = 0;
+float encoder6Val = 0;
+float encoder7Val = 0;
 
 // set all the motor drivers (you can put this in Enabled())
 servo1Driver.set(servo1Val);
@@ -97,6 +106,14 @@ motor6Driver.disable();
 motor7Driver.disable();
 motor8Driver.disable();
 
+// read velocity from all encoders (put in Always())
+encoder2Val = encoder2.getVel();
+encoder3Val = encoder3.getVel();
+encoder4Val = encoder4.getVel();
+encoder5Val = encoder5.getVel();
+encoder6Val = encoder6.getVel();
+encoder7Val = encoder7.getVel();
+
 // receive values for all the variables (you can put this in WifiDataToParse())
 servo1Val = EWD::recvFl();
 servo2Val = EWD::recvFl();
@@ -113,3 +130,11 @@ motor5Val = EWD::recvFl();
 motor6Val = EWD::recvFl();
 motor7Val = EWD::recvFl();
 motor8Val = EWD::recvFl();
+
+// send values for all the encoders (you can put this in WifiDataToSend())
+EWD::sendFl(encoder2Val);
+EWD::sendFl(encoder3Val);
+EWD::sendFl(encoder4Val);
+EWD::sendFl(encoder5Val);
+EWD::sendFl(encoder6Val);
+EWD::sendFl(encoder7Val);
