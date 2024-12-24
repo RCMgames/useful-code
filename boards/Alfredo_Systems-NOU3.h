@@ -107,6 +107,22 @@ motor6Driver.disable();
 motor7Driver.disable();
 motor8Driver.disable();
 
+// create interrupt functions for the encoders (you can put this above (and outside) the PowerOn() function)
+jENCODER_MAKE_ISRS_MACRO(encoder2);
+jENCODER_MAKE_ISRS_MACRO(encoder3);
+jENCODER_MAKE_ISRS_MACRO(encoder4);
+jENCODER_MAKE_ISRS_MACRO(encoder5);
+jENCODER_MAKE_ISRS_MACRO(encoder6);
+jENCODER_MAKE_ISRS_MACRO(encoder7);
+
+// set up all the motor drivers (you can put this in PowerOn())
+encoder2.setUpInterrupts(encoder2_jENCODER_ISR_A, encoder2_jENCODER_ISR_B);
+encoder3.setUpInterrupts(encoder3_jENCODER_ISR_A, encoder3_jENCODER_ISR_B);
+encoder4.setUpInterrupts(encoder4_jENCODER_ISR_A, encoder4_jENCODER_ISR_B);
+encoder5.setUpInterrupts(encoder5_jENCODER_ISR_A, encoder5_jENCODER_ISR_B);
+encoder6.setUpInterrupts(encoder6_jENCODER_ISR_A, encoder6_jENCODER_ISR_B);
+encoder7.setUpInterrupts(encoder7_jENCODER_ISR_A, encoder7_jENCODER_ISR_B);
+
 // read velocity from all encoders (put in Always())
 encoder2Val = encoder2.getVel();
 encoder3Val = encoder3.getVel();
