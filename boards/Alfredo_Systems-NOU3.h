@@ -22,6 +22,13 @@ JMotorDriverPCA9685HBridge motor6Driver = JMotorDriverPCA9685HBridge(motor6port)
 JMotorDriverPCA9685HBridge motor7Driver = JMotorDriverPCA9685HBridge(motor7port);
 JMotorDriverPCA9685HBridge motor8Driver = JMotorDriverPCA9685HBridge(motor8port);
 
+// all the encoder plugs
+JEncoderQuadrature encoder2 = JEncoderQuadratureAttachInterrupt(encoder2port, 1.0, false); // multiplier, inverted
+JEncoderQuadrature encoder3 = JEncoderQuadratureAttachInterrupt(encoder3port, 1.0, false); // multiplier, inverted
+JEncoderQuadrature encoder4 = JEncoderQuadratureAttachInterrupt(encoder4port, 1.0, false); // multiplier, inverted
+JEncoderQuadrature encoder5 = JEncoderQuadratureAttachInterrupt(encoder5port, 1.0, false); // multiplier, inverted
+JEncoderQuadrature encoder6 = JEncoderQuadratureAttachInterrupt(encoder6port, 1.0, false); // multiplier, inverted
+
 // variables for the drivers
 float servo1Val = 0;
 float servo2Val = 0;
