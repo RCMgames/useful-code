@@ -9,8 +9,6 @@ JMotorDriverEsp32Servo servo1Driver = JMotorDriverEsp32Servo(servo1port);
 JMotorDriverEsp32Servo servo2Driver = JMotorDriverEsp32Servo(servo2port);
 JMotorDriverEsp32Servo servo3Driver = JMotorDriverEsp32Servo(servo3port);
 JMotorDriverEsp32Servo servo4Driver = JMotorDriverEsp32Servo(servo4port);
-JMotorDriverEsp32Servo servo5Driver = JMotorDriverEsp32Servo(servo5port);
-JMotorDriverEsp32Servo servo6Driver = JMotorDriverEsp32Servo(servo6port);
 
 // all the motor drivers
 JMotorDriverPCA9685HBridge motor1Driver = JMotorDriverPCA9685HBridge(motor1port);
@@ -36,8 +34,6 @@ float servo1Val = 0;
 float servo2Val = 0;
 float servo3Val = 0;
 float servo4Val = 0;
-float servo5Val = 0;
-float servo6Val = 0;
 
 float motor1Val = 0;
 float motor2Val = 0;
@@ -61,8 +57,6 @@ servo1Driver.set(servo1Val);
 servo2Driver.set(servo2Val);
 servo3Driver.set(servo3Val);
 servo4Driver.set(servo4Val);
-servo5Driver.set(servo5Val);
-servo6Driver.set(servo6Val);
 
 motor1Driver.set(motor1Val);
 motor2Driver.set(motor2Val);
@@ -78,8 +72,6 @@ servo1Driver.enable();
 servo2Driver.enable();
 servo3Driver.enable();
 servo4Driver.enable();
-servo5Driver.enable();
-servo6Driver.enable();
 
 motor1Driver.enable();
 motor2Driver.enable();
@@ -95,8 +87,6 @@ servo1Driver.disable();
 servo2Driver.disable();
 servo3Driver.disable();
 servo4Driver.disable();
-servo5Driver.disable();
-servo6Driver.disable();
 
 motor1Driver.disable();
 motor2Driver.disable();
@@ -136,8 +126,6 @@ servo1Val = EWD::recvFl();
 servo2Val = EWD::recvFl();
 servo3Val = EWD::recvFl();
 servo4Val = EWD::recvFl();
-servo5Val = EWD::recvFl();
-servo6Val = EWD::recvFl();
 
 motor1Val = EWD::recvFl();
 motor2Val = EWD::recvFl();
